@@ -219,6 +219,9 @@ h1, h2, h3 {
     object-fit: contain;
     object-position: top;
   }
+  .portfolio-section {
+    padding-top: var(--space-m); /* Reduce gap on mobile */
+  }
 }
 
 @keyframes subtleZoom {
