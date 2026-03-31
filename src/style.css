@@ -211,6 +211,10 @@ h1, h2, h3 {
 }
 
 @media (max-width: 768px) {
+  .hero-section {
+    height: 56.25vw; /* 16:9 Aspect Ratio on mobile */
+    min-height: 200px; /* Safety minimum */
+  }
   .video-placeholder .bg-video {
     object-fit: contain;
     object-position: top;
