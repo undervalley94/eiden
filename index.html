@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>映伝 (EIDEN)</title>
+    <!-- Google Fonts for Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&family=Noto+Sans+JP:wght@300;500;700&family=Shippori+Mincho:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <!-- Background Particles Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Header & Hamburger Menu -->
+    <header class="site-header">
+      <div class="logo">EIDEN</div>
+      <button class="hamburger-btn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <!-- Navigation Overlay -->
+    <nav class="fullscreen-menu">
+      <ul class="menu-links">
+        <li><a href="#" class="menu-link">TOP</a></li>
+        <li><a href="#work" class="menu-link">WORK</a></li>
+        <li><a href="#crew" class="menu-link">CREW</a></li>
+        <li><a href="#contact" class="menu-link">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <!-- Canvas or animated background for hero to simulate video -->
+    <section class="hero-section">
+      <div class="video-placeholder">
+        <video src="/assets/hero_video.mp4" class="bg-video" autoplay loop muted playsinline></video>
+      </div>
+
+    </section>
+
+    <section class="portfolio-section" id="work">
+      <h2 class="section-title">WORK</h2>
+      
+      <!-- Filter Buttons -->
+      <ul class="work-filters">
+        <li><button class="filter-btn active" data-filter="all">ALL</button></li>
+        <li><button class="filter-btn" data-filter="mv">MV</button></li>
+        <li><button class="filter-btn" data-filter="youtube">YOUTUBE</button></li>
+        <li><button class="filter-btn" data-filter="recruit">RECRUIT</button></li>
+        <li><button class="filter-btn" data-filter="event">EVENT</button></li>
+        <li><button class="filter-btn" data-filter="cm">CM</button></li>
+        <li><button class="filter-btn" data-filter="short">SHORT</button></li>
+      </ul>
+
+      <div class="portfolio-grid">
+        <article class="portfolio-item gallery-item" tabindex="0" data-group="work" data-category="mv" data-title="Work 1 - MV (隆貴-恋するトナカイ)" data-vimeo-id="1178351688">
+          <img src="/assets/work1_mv_thumb.jpg" alt="Work 1" />
+        </article>
+        <article class="portfolio-item gallery-item" tabindex="0" data-group="work" data-category="youtube" data-title="Work 2 - YOUTUBE">
+          <img src="/assets/eiden_portfolio1_1774828451951.png" alt="Work 2" />
+        </article>
+        <article class="portfolio-item gallery-item" tabindex="0" data-group="work" data-category="recruit" data-title="Work 3 - RECRUIT">
+          <img src="/assets/eiden_portfolio1_1774828451951.png" alt="Work 3" />
+        </article>
+        <article class="portfolio-item gallery-item" tabindex="0" data-group="work" data-category="event" data-title="Work 4 - EVENT (参天製薬様ハッピーアイチャレンジ)" data-vimeo-id="1178291432">
+          <img src="/assets/work4_event_thumb.jpg" alt="Work 4" />
+        </article>
+        <article class="portfolio-item gallery-item" tabindex="0" data-group="work" data-category="cm" data-title="Work 5 - CM (17LIVE様 ツタヤエビスバシヒットビジョン)" data-vimeo-id="1178297277">
+          <img src="/assets/work5_cm_thumb.jpg" alt="Work 5" />
+        </article>
+        <article class="portfolio-item gallery-item" tabindex="0" data-group="work" data-category="mv" data-title="Work 6 - MV (Vecken-懐メロは時に残酷だ)" data-vimeo-id="1178363136">
+          <img src="/assets/work6_mv_thumb.jpg" alt="Work 6" />
+        </article>
+        <article class="portfolio-item gallery-item" tabindex="0" data-group="work" data-category="short" data-title="Work 7 - SHORT (Visionary Stay様　RoomTour)" data-vimeo-id="1178359434">
+          <img src="/assets/work7_short_thumb.jpg" alt="Work 7" />
+        </article>
+        <article class="portfolio-item gallery-item" tabindex="0" data-group="work" data-category="recruit" data-title="Work 8 - RECRUIT">
+          <img src="/assets/eiden_portfolio1_1774828451951.png" alt="Work 8" />
+        </article>
+        <article class="portfolio-item gallery-item" tabindex="0" data-group="work" data-category="event" data-title="Work 9 - EVENT">
+          <img src="/assets/eiden_portfolio1_1774828451951.png" alt="Work 9" />
+        </article>
+        <article class="portfolio-item gallery-item" tabindex="0" data-group="work" data-category="cm" data-title="Work 10 - CM (一栞様 民泊PR)" data-vimeo-id="1178349681">
+          <img src="/assets/work10_cm_thumb.jpg" alt="Work 10" />
+        </article>
+        <article class="portfolio-item gallery-item" tabindex="0" data-group="work" data-category="youtube" data-title="Work 11 - YOUTUBE">
+          <img src="/assets/eiden_portfolio1_1774828451951.png" alt="Work 11" />
+        </article>
+        <article class="portfolio-item gallery-item" tabindex="0" data-group="work" data-category="youtube" data-title="Work 12 - YOUTUBE">
+          <img src="/assets/eiden_portfolio1_1774828451951.png" alt="Work 12" />
+        </article>
+        <article class="portfolio-item gallery-item" tabindex="0" data-group="work" data-category="short" data-title="Work 13 - SHORT (ルムミル様_内見動画)" data-vimeo-id="1178368086">
+          <img src="/assets/work13_short_thumb.jpg" alt="Work 13" />
+        </article>
+        <article class="portfolio-item gallery-item" tabindex="0" data-group="work" data-category="short" data-title="Work 14 - SHORT">
+          <img src="/assets/eiden_portfolio1_1774828451951.png" alt="Work 14" />
+        </article>
+        <article class="portfolio-item gallery-item" tabindex="0" data-group="work" data-category="short" data-title="Work 15 - SHORT">
+          <img src="/assets/eiden_portfolio1_1774828451951.png" alt="Work 15" />
+        </article>
+      </div>
+    </section>
+
+    <section class="members-section" id="crew">
+      <h2 class="section-title">CREW</h2>
+      <div class="members-grid">
+        <div class="member-card gallery-item" tabindex="0" data-group="member" data-title="NAOKI TANISHITA - PRODUCER">
+          <div class="img-wrapper">
+             <img src="/assets/naoki_tanishita.jpg" alt="NAOKI TANISHITA" />
+          </div>
+          <h3 class="member-name">NAOKI TANISHITA</h3>
+          <p class="member-role">PRODUCER</p>
+        </div>
+        <div class="member-card gallery-item" tabindex="0" data-group="member" data-title="YUYA OKAMOTO - DIRECTOR">
+          <div class="img-wrapper">
+             <img src="/assets/eiden_member_yuya_okamoto.png" alt="YUYA OKAMOTO" />
+          </div>
+          <h3 class="member-name">YUYA OKAMOTO</h3>
+          <p class="member-role">DIRECTOR</p>
+        </div>
+        <div class="member-card gallery-item" tabindex="0" data-group="member" data-title="EITARO KAGAWA - EDITOR">
+          <div class="img-wrapper">
+             <img src="/assets/eiden_member3_1774828439836.png" alt="EITARO KAGAWA" />
+          </div>
+          <h3 class="member-name">EITARO KAGAWA</h3>
+          <p class="member-role">EDITOR</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <h2 class="section-title">CONTACT</h2>
+      <form class="minimal-form" onsubmit="event.preventDefault(); alert('現在は送信できません。');">
+        <div class="form-group">
+          <input type="text" placeholder="名前 / NAME" required />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="メール / EMAIL" required />
+        </div>
+        <div class="form-group">
+          <textarea rows="1" placeholder="メッセージ / MESSAGE" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send</button>
+      </form>
+    </section>
+
+    <!-- Modal for Video overlay -->
+    <div id="video-modal" class="modal">
+      <button class="close-btn" aria-label="Close"></button>
+      <button class="nav-btn prev-btn" aria-label="Previous"></button>
+      <button class="nav-btn next-btn" aria-label="Next"></button>
+      <div class="modal-content">
+        <div id="modal-media-container" class="modal-media-container"></div>
+        <div class="modal-caption" id="modal-caption"></div>
+      </div>
+    </div>
+
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
