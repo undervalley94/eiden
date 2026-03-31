@@ -199,4 +199,18 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+  // --- Opening Loader Controller ---
+  const openingOverlay = document.getElementById('opening-overlay');
+  if (openingOverlay) {
+    // 演出時間（2.5s）+ 余裕を持ってフェードアウトを開始
+    setTimeout(() => {
+      openingOverlay.classList.add('fade-out');
+      
+      // アニメーション完了後に要素を削除して負荷を減らす
+      setTimeout(() => {
+        openingOverlay.remove();
+      }, 1000); // CSSのtransition時間(1s)に合わせる
+    }, 2800);
+  }
 });
