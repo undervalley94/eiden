@@ -134,16 +134,12 @@
 
     <section class="contact-section" id="contact">
       <h2 class="section-title">CONTACT</h2>
-      <form class="minimal-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="contact" />
-        <p class="hidden" style="display:none;">
-          <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-        </p>
+      <form class="minimal-form" action="https://formspree.io/f/xreokbkv" method="POST">
         <div class="form-group">
           <input type="text" name="name" placeholder="名前 / NAME" required />
         </div>
         <div class="form-group">
-          <input type="email" name="email" placeholder="メール / EMAIL" required />
+          <input type="email" name="_replyto" placeholder="メール / EMAIL" required />
         </div>
         <div class="form-group">
           <textarea name="message" rows="1" placeholder="メッセージ / MESSAGE" required></textarea>
