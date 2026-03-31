@@ -210,6 +210,12 @@ h1, h2, h3 {
   filter: grayscale(10%) contrast(1.05);
 }
 
+@media (max-width: 768px) {
+  .video-placeholder .bg-video {
+    object-fit: contain;
+  }
+}
+
 @keyframes subtleZoom {
   0% { transform: scale(1); }
   100% { transform: scale(1.1); }
